@@ -22,7 +22,7 @@
         printf("El precio de un pantalón= %s <br>",$precioPantalon);
         printf("El precio de una camisa= %s <br>",$precioCamisa);
         printf("El total sin descuento es= %s <br>",$total);
-        printf("El total con descuento es= %s  <br>",$totalDes);
+        printf(" El total con descuento es= %0.2f <br>",$totalDes);
 
     ?>
 </body>
