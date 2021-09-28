@@ -16,14 +16,14 @@
         define("PI", 3.14);
 
         $areaTriangulo= ($base * $altura) *2;
-        $cuadrado= $base * $altura;
-        $rombo= ($diagonalMayor * $diagonalMenor)/2;
+        $areaCuadrado= $base * $altura;
+        $areaRombo= ($diagonalMayor * $diagonalMenor)/2;
         $circulo= PI * $r * $r;
 
         printf("El circulo de radio %s tiene un area de %s <br>", $r,$circulo);
-        printf("El triangulo de base %s y altura %s es  %s <br>", $base,$altura,$areaTriangulo);
-        printf("El rombo de diagonal mayor %s y diagonal menor %s es %s <br>", $diagonalMayor,$diagonalMenor,$rombo);
-        printf("El cuadrado de base %s y de altura %s es %s <br>" , $base,$altura, $cuadrado);
+        printf("El area de triangulo de base %s y altura %s es  %s <br>", $base,$altura,$areaTriangulo);
+        printf("El area de rombo de diagonal mayor %s y diagonal menor %s es %s <br>", $diagonalMayor,$diagonalMenor,$areaRombo);
+        printf("El area de cuadrado de base %s y de altura %s es %s <br>" , $base,$altura, $areaCuadrado);
 
 
     ?>
