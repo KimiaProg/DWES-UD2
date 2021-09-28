@@ -14,10 +14,10 @@
         $cantidadPantalon = 3;
         $precioCamisa= 25.99;
         $cantiadCamisa=2;
-        define("DES", 0.08);
+        define("DES", 8);
 
         $total= ($precioCamisa*2) + ($precioPantalon*3);
-        $totalDes= $total-($total * DES);
+        $totalDes= $total-($total * (DES/100));
 
         printf("El precio de un pantalón= %s <br>",$precioPantalon);
         printf("El precio de una camisa= %s <br>",$precioCamisa);
