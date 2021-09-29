@@ -16,20 +16,17 @@
     define("MAXDIARIA", 6);
     define("MAXSEMANAL", 30);
 
-
+    echo "El valor de operaciones diarias es mayor o igual que el máximo:";
     var_export($numDiaria >= MAXDIARIA);
 
-    echo "<br>";
+    echo "<br> El valor de operaciones semanales es mayor o igual que el máximo:";
     var_export($numSemanal >= MAXSEMANAL);
 
-    echo "<br>";
-
+    echo "<br> El valor de operaciones diarias es exactamente igual al máximo:";
     var_export($numDiaria === MAXDIARIA);
-    echo "<br>";
 
-
+    echo "<br> El valor de operaciones diarias es distinto al de operaciones semanales:";
     var_export($numDiaria != $numSemanal);
-    echo "<br>";
 
 
 
