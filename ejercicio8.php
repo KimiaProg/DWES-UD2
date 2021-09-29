@@ -15,7 +15,7 @@
     echo "<br>";
     var_export(is_string($v1));
     echo "<br>";
-    var_export(gettype($v1));
+    echo gettype($v1);
     echo "<br>";
     var_export(is_scalar($v1));
     echo "<br>";
@@ -25,7 +25,7 @@
     echo "<br>";
     var_export(is_numeric($v1));
     echo "<br>";
-    var_export(gettype($v1));
+    echo gettype($v1);
     echo "<br>";
     var_export(is_float($v1));
     echo "<br>";
