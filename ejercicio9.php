@@ -8,11 +8,32 @@
 </head>
 <body>
     <?php
-        foreach ($_SERVER as $nombre_campo=> $valor ) {
-            echo $nombre_campo ." ". $valor;
-            echo "<br>";
+       
+        echo "El nombre del archivo de script ejecutándose actualmente: ";
+        echo $_SERVER["PHP_SELF"];
+        echo "<br> La dirección IP del servidor donde se está ejecutando actualmente el script.: ";
+        echo $_SERVER["SERVER_ADDR"];
+        echo "<br>El nombre del host del servidor :";
+        echo $_SERVER["SERVER_NAME"];
+        echo "<br>El directorio raíz de documentos del servidor en el cual se está ejecutando el script actual:";
+        echo $_SERVER["DOCUMENT_ROOT"];
+        echo "<br>La dirección IP desde la cual está viendo la página actual el usuario.: ";
+        echo $_SERVER["REMOTE_ADDR"];
+        echo "<br>Comprobar el método de la solicitud:";
+        echo $_SERVER["REQUEST_METHOD"];
+        echo "<br>";
+
+
+        function variables(){
+            $v1= "Hola Local";
+            STATIC $v2= "Hola static";
+            GLOBAL $v3;
         }
 
+        echo $v1;
+        echo $v2;
+        $v3= "Global";
+        echo $v3;
         
 
     ?>
